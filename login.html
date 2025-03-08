@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign In - ModelHub</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    </head>
+    <body>
+        <div class="app auth-page">
+            <div class="auth-container">
+                <div class="auth-card">
+                    <div class="auth-header">
+                        <div class="auth-logo">
+                            <a href="index.html">ModelHub</a>
+                        </div>
+                        <h1 class="auth-title">Sign in to your account</h1>
+                        <p class="auth-description">
+                            Enter your email and password to sign in
+                        </p>
+                    </div>
+
+                    <div class="auth-content">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                class="form-input"
+                                placeholder="m@example.com" />
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label-with-link">
+                                <label for="password"
+                                    class="form-label">Password</label>
+                                <a href="#" class="form-link">Forgot
+                                    password?</a>
+                            </div>
+                            <input type="password" id="password"
+                                class="form-input" />
+                        </div>
+                    </div>
+
+                    <div class="auth-footer">
+                        <button class="btn btn-primary btn-full">Sign
+                            In</button>
+                        <p class="auth-switch">
+                            Don't have an account?
+                            <a href="register.html"
+                                class="auth-switch-link">Sign up</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Create an Account - ModelHub</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    </head>
+    <body>
+        <div class="app auth-page">
+            <div class="auth-container">
+                <div class="auth-card">
+                    <div class="auth-header">
+                        <div class="auth-logo">
+                            <a href="index.html">ModelHub</a>
+                        </div>
+                        <h1 class="auth-title">Create an account</h1>
+                        <p class="auth-description">
+                            Enter your information to create an account
+                        </p>
+                    </div>
+
+                    <div class="auth-content">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First
+                                    name</label>
+                                <input
+                                    type="text"
+                                    id="firstName"
+                                    class="form-input"
+                                    placeholder="John" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last
+                                    name</label>
+                                <input
+                                    type="text"
+                                    id="lastName"
+                                    class="form-input"
+                                    placeholder="Doe" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username"
+                                class="form-label">Username</label>
+                            <input
+                                type="text"
+                                id="username"
+                                class="form-input"
+                                placeholder="johndoe" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                class="form-input"
+                                placeholder="m@example.com" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password"
+                                class="form-label">Password</label>
+                            <input type="password" id="password"
+                                class="form-input" />
+                        </div>
+
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="terms"
+                                class="checkbox" />
+                            <label for="terms" class="checkbox-label">
+                                I agree to the
+                                <a href="#" class="form-link">terms and
+                                    conditions</a>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="auth-footer">
+                        <button class="btn btn-primary btn-full">Create
+                            Account</button>
+                        <p class="auth-switch">
+                            Already have an account?
+                            <a href="login.html" class="auth-switch-link">Sign
+                                in</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

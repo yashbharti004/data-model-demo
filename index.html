@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ModelHub - Data Analysis Model Repository</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    </head>
+    <body>
+        <div class="app">
+            <!-- Navbar -->
+            <nav class="navbar">
+                <div class="container navbar-container">
+                    <a href="index.html" class="logo">ModelHub</a>
+
+                    <div class="search-container">
+                        <div class="search-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <input
+                            type="text"
+                            placeholder="Search repositories..."
+                            class="search-input" />
+                    </div>
+
+                    <div class="nav-links">
+                        <a href="explore.html" class="nav-link">Explore</a>
+                        <a href="#" class="nav-link">Create</a>
+                        <a href="login.html" class="nav-link-outline">Sign
+                            In</a>
+                        <a href="register.html" class="nav-link-primary">Sign
+                            Up</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="main">
+                <!-- Hero Section -->
+                <section class="hero-section">
+                    <div class="container">
+                        <div class="hero-content">
+                            <h1 class="hero-title">The Platform for Data
+                                Analysis Models</h1>
+                            <p class="hero-description">
+                                Upload, share, fork, and collaborate on data
+                                analysis projects
+                                with a community of data scientists and
+                                analysts.
+                            </p>
+                            <div class="hero-buttons">
+                                <a href="register.html"
+                                    class="btn btn-primary btn-lg">Get
+                                    Started</a>
+                                <a href="explore.html"
+                                    class="btn btn-outline btn-lg">Explore
+                                    Models</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Features Section -->
+                <section class="features-section">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2 class="section-title">Platform Features</h2>
+                            <p class="section-description">
+                                Everything you need to manage and collaborate on
+                                data analysis
+                                models.
+                            </p>
+                        </div>
+
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h3 class="feature-title">Model Repository</h3>
+                                <p class="feature-description">
+                                    Store and organize your data analysis models
+                                    with version
+                                    control and documentation.
+                                </p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-code-branch"></i>
+                                </div>
+                                <h3 class="feature-title">Branching &
+                                    Forking</h3>
+                                <p class="feature-description">
+                                    Create branches for experiments or fork
+                                    existing models to
+                                    build upon others' work.
+                                </p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-code-pull-request"></i>
+                                </div>
+                                <h3 class="feature-title">Pull Requests</h3>
+                                <p class="feature-description">
+                                    Collaborate with others through pull
+                                    requests to improve
+                                    models together.
+                                </p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h3 class="feature-title">Community</h3>
+                                <p class="feature-description">
+                                    Join a community of data scientists and
+                                    analysts to share
+                                    knowledge and insights.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Popular Models Section -->
+                <section class="models-section">
+                    <div class="container">
+                        <div class="section-header-with-link">
+                            <div>
+                                <h2 class="section-title">Popular Models</h2>
+                                <p class="section-description">
+                                    Discover trending data analysis models from
+                                    the community.
+                                </p>
+                            </div>
+                            <a href="explore.html" class="view-all-link">View
+                                all models</a>
+                        </div>
+
+                        <div class="models-grid">
+                            <!-- Model Card 1 -->
+                            <div class="model-card">
+                                <div class="model-card-header">
+                                    <h3 class="model-card-title">
+                                        <a href="model-detail.html?id=1">Time
+                                            Series Forecasting</a>
+                                    </h3>
+                                    <a
+                                        href="user-profile.html?username=data_scientist_1"
+                                        class="model-card-author">@data_scientist_1</a>
+                                </div>
+                                <div class="model-card-content">
+                                    <p class="model-card-description">
+                                        A comprehensive model for forecasting
+                                        time series data with
+                                        multiple algorithms.
+                                    </p>
+                                    <div class="model-card-tags">
+                                        <span class="tag">time-series</span>
+                                        <span class="tag">forecasting</span>
+                                        <span class="tag">python</span>
+                                    </div>
+                                </div>
+                                <div class="model-card-footer">
+                                    <div class="model-stat">
+                                        <i class="fas fa-star"></i>
+                                        <span>245</span>
+                                    </div>
+                                    <div class="model-stat">
+                                        <i class="fas fa-code-branch"></i>
+                                        <span>57</span>
+                                    </div>
+                                    <div class="model-stat">
+                                        <i class="fas fa-eye"></i>
+                                        <span>1203</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Model Card 2 -->
+                            <div class="model-card">
+                                <div class="model-card-header">
+                                    <h3 class="model-card-title">
+                                        <a
+                                            href="model-detail.html?id=2">Customer
+                                            Segmentation</a>
+                                    </h3>
+                                    <a
+                                        href="user-profile.html?username=marketing_analyst"
+                                        class="model-card-author">@marketing_analyst</a>
+                                </div>
+                                <div class="model-card-content">
+                                    <p class="model-card-description">
+                                        Cluster analysis model for customer
+                                        segmentation using
+                                        K-means and hierarchical clustering.
+                                    </p>
+                                    <div class="model-card-tags">
+                                        <span class="tag">clustering</span>
+                                        <span class="tag">marketing</span>
+                                        <span class="tag">R</span>
+                                    </div>
+                                </div>
+                                <div class="model-card-footer">
+                                    <div class="model-stat">
+                                        <i class="fas fa-star"></i>
+                                        <span>189</span>
+                                    </div>
+                                    <div class="model-stat">
+                                        <i class="fas fa-code-branch"></i>
+                                        <span>42</span>
+                                    </div>
+                                    <div class="model-stat">
+                                        <i class="fas fa-eye"></i>
+                                        <span>876</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Model Card 3 -->
+                            <div class="model-card">
+                                <div class="model-card-header">
+                                    <h3 class="model-card-title">
+                                        <a
+                                            href="model-detail.html?id=3">Sentiment
+                                            Analysis</a>
+                                    </h3>
+                                    <a
+                                        href="user-profile.html?username=nlp_expert"
+                                        class="model-card-author">@nlp_expert</a>
+                                </div>
+                                <div class="model-card-content">
+                                    <p class="model-card-description">
+                                        NLP model for sentiment analysis of
+                                        customer reviews and
+                                        social media posts.
+                                    </p>
+                                    <div class="model-card-tags">
+                                        <span class="tag">nlp</span>
+                                        <span class="tag">sentiment</span>
+                                        <span class="tag">python</span>
+                                    </div>
+                                </div>
+                                <div class="model-card-footer">
+                                    <div class="model-stat">
+                                        <i class="fas fa-star"></i>
+                                        <span>312</span>
+                                    </div>
+                                    <div class="model-stat">
+                                        <i class="fas fa-code-branch"></i>
+                                        <span>89</span>
+                                    </div>
+                                    <div class="model-stat">
+                                        <i class="fas fa-eye"></i>
+                                        <span>1567</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Model Card 4 -->
+                            <div class="model-card">
+                                <div class="model-card-header">
+                                    <h3 class="model-card-title">
+                                        <a href="model-detail.html?id=4">Anomaly
+                                            Detection</a>
+                                    </h3>
+                                    <a
+                                        href="user-profile.html?username=security_analyst"
+                                        class="model-card-author">@security_analyst</a>
+                                </div>
+                                <div class="model-card-content">
+                                    <p class="model-card-description">
+                                        Detect anomalies in system logs and time
+                                        series data using
+                                        isolation forests.
+                                    </p>
+                                    <div class="model-card-tags">
+                                        <span class="tag">anomaly</span>
+                                        <span class="tag">security</span>
+                                        <span class="tag">python</span>
+                                    </div>
+                                </div>
+                                <div class="model-card-footer">
+                                    <div class="model-stat">
+                                        <i class="fas fa-star"></i>
+                                        <span>176</span>
+                                    </div>
+                                    <div class="model-stat">
+                                        <i class="fas fa-code-branch"></i>
+                                        <span>38</span>
+                                    </div>
+                                    <div class="model-stat">
+                                        <i class="fas fa-eye"></i>
+                                        <span>742</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA Section -->
+                <section class="cta-section">
+                    <div class="container">
+                        <div class="cta-content">
+                            <h2 class="cta-title">
+                                Ready to share your data analysis models?
+                            </h2>
+                            <p class="cta-description">
+                                Join thousands of data scientists and analysts
+                                who are already
+                                sharing and collaborating on ModelHub.
+                            </p>
+                            <a href="register.html"
+                                class="btn btn-secondary btn-lg">Create an
+                                Account</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-grid">
+                        <div class="footer-column">
+                            <h3 class="footer-title">ModelHub</h3>
+                            <p class="footer-description">
+                                A platform for data analysis models where users
+                                can upload,
+                                share, fork, and collaborate.
+                            </p>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4 class="footer-subtitle">Resources</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Guides</a></li>
+                                <li><a href="#">API</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4 class="footer-subtitle">Company</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4 class="footer-subtitle">Legal</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Terms</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p class="copyright">
+                            &copy; <span id="current-year"></span> ModelHub. All
+                            rights
+                            reserved.
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

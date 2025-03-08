@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>User Profile - ModelHub</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    </head>
+    <body>
+        <div class="app">
+            <!-- Navbar -->
+            <nav class="navbar">
+                <div class="container navbar-container">
+                    <a href="index.html" class="logo">ModelHub</a>
+
+                    <div class="search-container">
+                        <div class="search-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <input
+                            type="text"
+                            placeholder="Search repositories..."
+                            class="search-input" />
+                    </div>
+
+                    <div class="nav-links">
+                        <a href="explore.html" class="nav-link">Explore</a>
+                        <a href="#" class="nav-link">Create</a>
+                        <a href="login.html" class="nav-link-outline">Sign
+                            In</a>
+                        <a href="register.html" class="nav-link-primary">Sign
+                            Up</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="main">
+                <div class="container">
+                    <div class="profile-layout">
+                        <div class="profile-sidebar">
+                            <div class="profile-card">
+                                <div class="profile-avatar">
+                                    <img src alt id="profile-avatar"
+                                        class="avatar-image" />
+                                </div>
+
+                                <h2 class="profile-name"
+                                    id="profile-name">Loading...</h2>
+                                <p class="profile-username"
+                                    id="profile-username">@username</p>
+
+                                <button
+                                    class="btn btn-primary btn-full">Follow</button>
+
+                                <div class="profile-meta">
+                                    <div class="profile-meta-item">
+                                        <i class="fas fa-users"></i>
+                                        <span><strong
+                                                id="profile-followers">0</strong>
+                                            followers ·
+                                            <strong
+                                                id="profile-following">0</strong>
+                                            following</span>
+                                    </div>
+
+                                    <div
+                                        class="profile-meta-item"
+                                        id="profile-location-container">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span id="profile-location"></span>
+                                    </div>
+
+                                    <div class="profile-meta-item"
+                                        id="profile-website-container">
+                                        <i class="fas fa-link"></i>
+                                        <a
+                                            href="#"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            id="profile-website"></a>
+                                    </div>
+
+                                    <div class="profile-meta-item">
+                                        <i class="fas fa-calendar"></i>
+                                        <span id="profile-joined">Joined</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-content">
+                            <div class="profile-bio">
+                                <p id="profile-bio">Loading bio...</p>
+                            </div>
+
+                            <div class="tabs profile-tabs">
+                                <div class="tabs-list">
+                                    <button class="tab-button active"
+                                        data-tab="repositories">
+                                        Repositories
+                                    </button>
+                                    <button class="tab-button"
+                                        data-tab="starred">Starred</button>
+                                    <button class="tab-button"
+                                        data-tab="contributions">
+                                        Contributions
+                                    </button>
+                                </div>
+
+                                <div class="tab-content active"
+                                    id="repositories-content">
+                                    <div class="profile-repositories"
+                                        id="user-repositories">
+                                        <!-- Repositories will be inserted here -->
+                                    </div>
+                                </div>
+
+                                <div class="tab-content" id="starred-content">
+                                    <div class="profile-repositories"
+                                        id="starred-repositories">
+                                        <!-- Starred repositories will be inserted here -->
+                                    </div>
+                                </div>
+
+                                <div class="tab-content"
+                                    id="contributions-content">
+                                    <div class="contributions-card">
+                                        <div class="contributions-header">
+                                            <h3>Contribution Activity</h3>
+                                        </div>
+                                        <div class="contributions-content">
+                                            <div class="contributions-graph">
+                                                [Contribution graph
+                                                visualization would go here]
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-grid">
+                        <div class="footer-column">
+                            <h3 class="footer-title">ModelHub</h3>
+                            <p class="footer-description">
+                                A platform for data analysis models where users
+                                can upload,
+                                share, fork, and collaborate.
+                            </p>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4 class="footer-subtitle">Resources</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Guides</a></li>
+                                <li><a href="#">API</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4 class="footer-subtitle">Company</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4 class="footer-subtitle">Legal</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Terms</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p class="copyright">
+                            &copy; <span id="current-year"></span> ModelHub. All
+                            rights
+                            reserved.
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
